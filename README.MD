@@ -22,13 +22,13 @@ CrudNote/
 
 ├── css/
 
-│ └── home.css # **Estilos para la pagina de notas**
+│ └── home.css  **Estilos para la pagina de notas**
 
-| └── index.css # **Los estilos de la pagina principal (Landing page)**
+| └── index.css  **Los estilos de la pagina principal (Landing page)**
 
-│ └── login_registro.css # **Estilos para login y registro**
+│ └── login_registro.css  **Estilos para login y registro**
 
-| └── profile.css # **Los estilos del perfil**
+| └── profile.css  **Los estilos del perfil**
 
 ├── img/
 
@@ -36,29 +36,29 @@ CrudNote/
 
 ├── js/
 
-│ └── auth.js # **Registro e inicio de sesión**
+│ └── auth.js  **Registro e inicio de sesión**
 
-│ └── home.js # **CRUD de notas**
+│ └── home.js  **CRUD de notas**
 
-│ └── middleware.js # **Protección de rutas**
+│ └── middleware.js  **Protección de rutas**
 
-| └── profile.js # **Perfil del usuario**
+| └── profile.js  **Perfil del usuario**
 
-│ └── theme.js # **Cambiar tema claro/oscuro**
+│ └── theme.js  **Cambiar tema claro/oscuro**
 
-├── db.json # **Base de datos simulada para json-server**
+├── db.json  **Base de datos simulada para json-server**
 
-├── home.html # **Página principal de notas (dashboard)**
+├── home.html  **Página principal de notas (dashboard)**
 
-├── index.html # **Página principal (landing)**
+├── index.html  **Página principal (landing)**
 
-├── login.html # **Página de inicio de sesión**
+├── login.html  **Página de inicio de sesión**
 
-├── profile.html # **Perfil del usuario**
+├── profile.html  **Perfil del usuario**
 
-├── register.html # **Página de registro**
+├── register.html  **Página de registro**
 
-└── README.md # **Este archivo**
+└── README.md  **Este archivo**
 
 ---
 
