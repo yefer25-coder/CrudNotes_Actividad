@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.body-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #111;
+  padding: 2rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark.body-center {
+  background-color: #111827;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+body.dark .navbar {
+  background-color: #1f2937;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+body.dark .navbar a {
+  color: #f1f1f1;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.theme-toggle {
+  position: static;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar a,
+  .theme-toggle {
+    width: 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+}
+
+body.dark .container {
+  background-color: #1f2937;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+body.dark .form-box {
+  background-color: #273549;
+}
+
+.form-box h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+body.dark .form-box h2 {
+  color: #f1f1f1;
+}
+
+.form-box input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+body.dark .form-box input,
+body.dark textarea {
+  background-color: #374151;
+  color: white;
+  border: 1px solid #555;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #0056b3;
+}
+
+.share-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.share-section input,
+.share-section select {
+  flex: 1 1 auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+body.dark .share-section input,
+body.dark .share-section select {
+  background-color: #374151;
+  color: white;
+  border: 1px solid #555;
+}
+
+.share-section button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.share-section button:hover {
+  background-color: #218838;
+}
+
+.notes-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-card {
+  padding: 1rem;
+  background: #f5f5f5;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+}
+
+body.dark .note-card {
+  background-color: #374151;
+  border-left-color: #3b82f6;
+}
+
+.note-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.note-card p {
+  margin-bottom: 0.3rem;
+}
+
+.note-actions {
+  margin-top: 0.5rem;
+}
+
+.note-actions button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.note-actions button:hover {
+  background-color: #0056b3;
+}
+
+.shared-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .form-box,
+  .note-card {
+    padding: 1rem;
+  }
+
+  .share-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .theme-toggle {
+    align-self: flex-end;
+  }
+}

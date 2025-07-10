@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio - CrudNote</title>
+  <link rel="stylesheet" href="css/home.css">
+  <script src="./js/middleware.js"></script> 
+</head>
+<body class="body-center">
+  <header class="navbar">
+    <div class="logo">CrudNote</div>
+    <nav>
+      <a href="./index.html">Volver al inicio</a>
+      <a href="./home.html">Notas</a>
+      <a href="./profile.html">Mi perfil</a>
+      <button id="toggleThemeBtn" class="theme-toggle">Cambiar tema</button>
+    </nav>
+  </header>
+  <main class="main-content">
+    <div class="container">
+      <h1 id="welcome"></h1>
+
+      <form id="noteForm" class="form-box">
+
+        <h2>Nueva Nota</h2>
+        <input type="text" id="noteTitle" placeholder="Título" required>
+        <textarea id="noteContent" placeholder="Contenido" required></textarea>
+        <button type="submit">Crear Nota</button>
+
+        <div class="share-section">
+          <input type="text" class="share-input" placeholder="Usuario o correo">
+          <select class="share-permission">
+            <option value="read">Solo lectura</option>
+            <option value="edit">Lectura y edición</option>
+          </select>
+          <button class="share-btn">Compartir</button>
+        </div>
+        
+      </form>
+
+      <section id="notesContainer">
+        <h2>Tus notas</h2>
+        <div id="notesList" class="notes-list"></div>
+      </section>
+    </div>
+  </main>
+  <script src="./js/theme.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iniciar sesión - CrudNote</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/login_registro.css" />
+</head>
+<body class="body-center">
+
+  <header class="navbar">
+    <div class="logo">CrudNote</div>
+    <nav>
+      <a href="./index.html">Volver al inicio</a>
+      <a href="./register.html">Registrarme</a>
+      <button id="toggleThemeBtn" class="theme-toggle">Cambiar tema</button>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <form id="loginForm" class="form-box">
+      <h2>Iniciar sesión</h2>
+      <input type="text" id="loginId" placeholder="Correo o usuario" required />
+      <input type="password" id="loginPassword" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+
+  <script src="./js/theme.js"></script>
+  <script src="./js/auth.js"></script>
+</body>
+</html>
+

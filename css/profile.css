@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.body.profile-body {
+  background-color: white;
+  color: #111;
+  font-family: sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.dark.profile-body {
+  background-color: #111827;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+body.dark .navbar {
+  background-color: #1f2937;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+body.dark .navbar a {
+  color: #f1f1f1;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.theme-toggle {
+  position: static;
+  padding: 0.4rem 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive navbar */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar a,
+  .theme-toggle {
+    width: 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .card {
+  background-color: #1f2937;
+}
+
+.note-list {
+  list-style: none;
+  padding-left: 1rem;
+  color: inherit;
+}
+
+.center {
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: #e3342f;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #cc1f1a;
+}

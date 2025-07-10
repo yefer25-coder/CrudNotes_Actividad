@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil - CrudNote</title>
+  <link rel="stylesheet" href="./css/profile.css" />
+</head>
+<body class="body profile-body">
+  <header class="navbar">
+    <div class="logo">CrudNote</div>
+    <nav>
+      <a href="./index.html">Volver al inicio</a>
+      <a href="./home.html">Notas</a>
+      <a href="./profile.html">Mi perfil</a>
+      <button id="toggleThemeBtn" class="theme-toggle">Cambiar tema</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="title">Mi Perfil</h1>
+
+      <section class="card">
+        <h2 class="subtitle">Información de cuenta</h2>
+        <p><strong>Nombre de usuario:</strong> <span id="username"></span></p>
+        <p><strong>Correo:</strong> <span id="email"></span></p>
+        <p><strong>Registrado el:</strong> <span id="registeredAt"></span></p>
+      </section>
+
+      <section class="card">
+        <h2 class="subtitle">Notas que compartí</h2>
+        <ul id="sharedNotesList" class="note-list"></ul>
+      </section>
+
+      <div class="center">
+        <button id="logoutBtn" class="logout-btn">Cerrar sesión</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/theme.js"></script>
+  <script src="./js/profile.js"></script>
+</body>
+</html>
+
