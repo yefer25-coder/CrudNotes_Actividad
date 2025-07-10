@@ -140,7 +140,7 @@ Esto levantará un servidor en:
 
 ## 📬 Contacto
 
-- Desarrollado por: `Yeferson Garcia `✨
+- Desarrollado por: `Yeferson Garcia --> coder junior `✨
 
 ## 🖼️ Capturas de pantalla
 
