@@ -22,7 +22,7 @@ CrudNote/
 
 ├── css/
 
-│ └── home.css  **(Estilos para la pagina de notas)**
+│ └── home.css  (**Estilos para la pagina de notas**)
 
 | └── index.css  **Los estilos de la pagina principal (Landing page)**
 
