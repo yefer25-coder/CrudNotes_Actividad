@@ -22,11 +22,11 @@ CrudNote/
 
 ├── css/
 
-│ └── home.css  (**Estilos para la pagina de notas**)
+│ └── home.css --> **Estilos para la pagina de notas**
 
-| └── index.css  **Los estilos de la pagina principal (Landing page)**
+| └── index.css --> **Los estilos de la pagina principal (Landing page)**
 
-│ └── login_registro.css  **Estilos para login y registro**
+│ └── login_registro.css --> **Estilos para login y registro**
 
 | └── profile.css  **Los estilos del perfil**
 
